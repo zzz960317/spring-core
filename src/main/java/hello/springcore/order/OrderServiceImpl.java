@@ -16,9 +16,9 @@ public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
-    public OrderServiceImpl(MemoryMemberRepository memoryMemberRepository, FixDiscountPolicy fixDiscountPolicy) {
+    public OrderServiceImpl(MemoryMemberRepository memoryMemberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memoryMemberRepository;
-        this.discountPolicy = fixDiscountPolicy;
+        this.discountPolicy = discountPolicy;
     }
 
 
